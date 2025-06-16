@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarot Progress Reading</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="reading-container">
+    <h1>🃏 Tarot Progress Check</h1>
+
+    <div class="button-row">
+      <button onclick="drawCards()">Draw 3 Cards</button>
+      <button onclick="resetCards()">Reset</button>
+    </div>
+
+    <div id="spread">
+      <!-- Card 1 -->
+      <div class="card-slot" id="card1">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/card-back.jpg" alt="Card Back">
+          </div>
+          <div class="card-back">
+            <img src="" alt="Card Front">
+            <p class="card-title"></p>
+            <p class="card-meaning"></p>
+          </div>
+        </div>
+        <p class="card-position-label">Current Energy</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-slot" id="card2">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/card-back.jpg" alt="Card Back">
+          </div>
+          <div class="card-back">
+            <img src="" alt="Card Front">
+            <p class="card-title"></p>
+            <p class="card-meaning"></p>
+          </div>
+        </div>
+        <p class="card-position-label">Unseen Influence</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-slot" id="card3">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="images/card-back.jpg" alt="Card Back">
+          </div>
+          <div class="card-back">
+            <img src="" alt="Card Front">
+            <p class="card-title"></p>
+            <p class="card-meaning"></p>
+          </div>
+        </div>
+        <p class="card-position-label">Likely Outcome</p>
+      </div>
+    </div> <!-- End of #spread -->
+  </div> <!-- End of .reading-container -->
+
+  <!-- Scripts -->
+  <script src="major.js"></script>
+  <script src="cups.js"></script>
+  <script src="swords.js"></script>
+  <script src="wands.js"></script>
+  <script src="pentacles.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
